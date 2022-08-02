@@ -1,0 +1,740 @@
+a {
+    color: #666;
+    text-decoration: none
+}
+
+a:hover {
+    color: #c81623
+}
+
+
+/* 首页专用模块   main   start */
+
+.main {
+    margin-top: 10px;
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+}
+
+
+/* focus   焦点图 */
+
+.main .focus {
+    position: relative;
+    float: left;
+    width: 721px;
+    height: 455px;
+    background-color: yellowgreen;
+    overflow: hidden;
+}
+
+.focus .focus_item {
+    /* ul 做动画必须有定位 ul在移动，谁移动给谁加 */
+    position: relative;
+    top: 0;
+    left: 0;
+    /* width: 500%; */
+}
+
+.focus ul li {
+    float: left;
+}
+
+.focus_item li a img {
+    width: 721px;
+    height: 455px;
+}
+
+.focus .arrow_l,
+.focus .arrow_r {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 25px;
+    height: 35px;
+    background: rgba(0, 0, 0, .18);
+    line-height: 35px;
+    color: #fff;
+    font-family: 'icomoon';
+    font-size: 18px;
+    z-index: 2;
+    /* ul加定位 层级就不够 */
+    transition: .18s;
+}
+
+.arrow_l:hover,
+.arrow_r:hover {
+    background-color: rgba(0, 0, 0, .4);
+    transition: .18s;
+}
+
+
+/* 左侧按钮   arrow 箭头 */
+
+.focus .arrow_l {
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.focus .arrow_l i {
+    position: relative;
+    left: -3px;
+}
+
+
+/* 右侧按钮 */
+
+.focus .arrow_r {
+    right: 0;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+.focus .arrow_r i {
+    position: relative;
+    left: 3px;
+}
+
+
+/* 小圆圈   circle 圆圈（current 现在的） */
+
+.focus .circle {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    /* left: 50%;
+    transform: translate(-50%); */
+}
+
+.circle li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0 3px;
+    border-radius: 50%;
+    /*鼠标经过显示小手*/
+    /* cursor: pointer; */
+}
+
+.current {
+    background-color: #fff !important;
+}
+
+
+/* newsflash   快报模块 */
+
+.main .newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+
+
+/* news 新闻模块 */
+
+.newsflash .news {
+    height: 165px;
+    /* background-color: yellow; */
+    border: 1px solid #e4e4e4;
+}
+
+
+/* news-hd 新闻头部模块 */
+
+.news_hd {
+    height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+    /* 点线边框 */
+    line-height: 33px;
+}
+
+.news_hd h5 {
+    float: left;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.news_hd .more {
+    float: right;
+    margin-right: 15px;
+    font-family: 'icomoon';
+}
+
+
+/* news-bd 新闻主题部分 */
+
+.news_bd ul li {
+    height: 24px;
+    width: 210px;
+    padding-top: 8px;
+    margin-left: 15px;
+    /* 单行文本溢出显示省略号--必须满足三个条件 */
+    /*1. 先强制一行内显示文本*/
+    white-space: nowrap;
+    /* （ 默认 normal 自动换行） */
+    /*2. 超出的部分隐藏*/
+    overflow: hidden;
+    /*3. 文字用省略号替代超出的部分*/
+    text-overflow: ellipsis;
+}
+
+
+/* lifeservice 生活服务模块 */
+
+.newsflash .lifeservice {
+    height: 209px;
+    /* background-color: peru; */
+    border-left: 1px solid #e4e4e4;
+    /* border: 1px solid #e4e4e4;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0; */
+}
+
+.lifeservice ul li {
+    float: left;
+    width: 25%;
+    height: 70px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.lifeservice ul li a {
+    display: block;
+    text-align: center;
+}
+
+.lifeservice ul li a i {
+    display: inline-block;
+    margin-top: 12px;
+    width: 24px;
+    height: 24px;
+    /* background-color: yellowgreen; */
+}
+
+a .one {
+    background: url(../img/icons.png) -17px -16px;
+}
+
+a .two {
+    background: url(../img/icons.png) -78px -16px;
+    position: relative;
+}
+
+
+/* 伪元素选择器 */
+
+a .two::after {
+    display: inline-block;
+    /* 子绝父相 */
+    position: absolute;
+    top: -12px;
+    right: -19px;
+    content: '';
+    width: 12px;
+    height: 15px;
+    background-color: blue;
+    background: url(../img/full.minus.png);
+}
+
+a .three {
+    background: url(../img/icons.png) -141px -16px;
+}
+
+a .four {
+    background: url(../img/icons.png) -206px -16px;
+}
+
+a .five {
+    background: url(../img/icons.png) -17px -88px;
+}
+
+a .six {
+    background: url(../img/icons.png) -78px -88px;
+}
+
+a .seven {
+    background: url(../img/icons.png) -141px -88px;
+}
+
+a .eight {
+    background: url(../img/icons.png) -206px -88px;
+}
+
+a .nine {
+    background: url(../img/icons.png) -17px -159px;
+}
+
+a .ten {
+    background: url(../img/icons.png) -78px -159px;
+}
+
+a .eleven {
+    background: url(../img/icons.png) -141px -159px;
+}
+
+a .twelve {
+    background: url(../img/icons.png) -206px -159px;
+}
+
+.lifeservice ul li a:hover {
+    color: #c81623;
+}
+
+
+/* bargain 特价商品 */
+
+.bargain img {
+    margin-top: 5px;
+}
+
+
+/* 首页专用模块   main   end */
+
+
+/* 推荐模块   大盒子 recom 推荐模块 recommend   start */
+
+.recom {
+    height: 163px;
+    background-color: pink;
+    margin-top: 11px;
+}
+
+.recom_hd {
+    float: left;
+    width: 206px;
+    height: 163px;
+    background-color: #5c5251;
+    text-align: center;
+}
+
+.recom_hd img {
+    margin-top: 31px;
+}
+
+.recom_bd {
+    float: left;
+    background-color: #ebebeb;
+    width: 994px;
+    height: 163px;
+}
+
+.recom_bd ul li a {
+    display: block;
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 163px;
+}
+
+.recom_bd ul li a img {
+    width: 249px;
+    height: 163px;
+}
+
+
+/* 结构伪类添加小竖线 */
+
+.recom_bd ul li:nth-child(-n+3) a::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+
+
+/* 推荐模块   大盒子 recom 推荐模块 recommend   end */
+
+
+/* 猜你喜欢模块   like   start */
+
+.like {
+    margin-top: 20px;
+    height: 269px;
+}
+
+.like_hd {
+    height: 36px;
+    line-height: 36px;
+}
+
+.like_hd h3 {
+    float: left;
+    color: #494949;
+}
+
+.like_hd a {
+    float: right;
+    color: #666
+}
+
+.like_hd a::after {
+    font-family: 'icomoon';
+    content: '\e982';
+    color: #666;
+    margin: 0 21px 0 8px;
+}
+
+.like_bd {
+    height: 233px;
+    border: 1px solid #ededed;
+}
+
+.like_bd ul li a {
+    /* .like_bd ul li: nth-child(-n+5) a::after的父级是a */
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.like_bd ul li a:hover {
+    color: #666;
+}
+
+.like_bd ul li a p:hover {
+    color: #c81623;
+}
+
+.like_bd ul li a img {
+    width: 200px;
+    height: 159px;
+}
+
+.like_bd ul li a span {
+    display: block;
+    margin-left: 36px;
+    width: 120px;
+}
+
+.like_bd ul li a span p {
+    font-size: 12px;
+    /* 多行文本溢出显示省略号 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 弹性伸缩盒子模型显示 */
+    display: -webkit-box;
+    /* 限制在一个块元素显示的文本的行数 */
+    -webkit-line-clamp: 2;
+    /* 设置或检索伸缩盒对象的子元素的排列方式 */
+    -webkit-box-orient: vertical;
+}
+
+.like_bd ul li a span i {
+    font-size: 15px;
+    color: #df3033;
+}
+
+.like_bd ul li a span i::before {
+    content: '¥';
+    font-size: 12px;
+}
+
+.like_bd ul li:nth-child(6) a img {
+    width: 198px;
+}
+
+
+/* 结构伪类添加小竖线 */
+
+.like_bd ul li:nth-child(-n+5) a::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+    width: 1px;
+    height: 62px;
+    background-color: #ededed;
+}
+
+
+/* 猜你喜欢模块   like   end */
+
+
+/* 楼层区floor制作   start */
+
+
+/* electric   1楼电器专区 */
+
+.box_hd {
+    margin-top: 24px;
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+    color: #c81623;
+}
+
+.tab_list {
+    float: right;
+    line-height: 30px;
+    margin-right: 9px;
+}
+
+.tab_list ul li {
+    float: left;
+}
+
+.tab_list ul li span {
+    margin: 0 15px;
+}
+
+
+/* .tab_list ul li:nth-child(1) a {
+    color: #c81623;
+} */
+
+.box_bd {
+    height: 361px;
+    /* background-color: pink; */
+}
+
+
+/* tab_content   内容 */
+
+
+/* .tab_content_item>div { */
+
+.tab_content_item div {
+    float: left;
+}
+
+.col_1 {
+    width: 210px;
+    height: 361px;
+    text-align: center;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+
+.col_1 ul {
+    width: 210px;
+    height: 110px;
+}
+
+.enlarge {
+    display: inline-block;
+    width: 210px;
+    height: 261px;
+    overflow: hidden;
+}
+
+.col_1 a img {
+    transition: .2s;
+}
+
+.col_1 a img:hover {
+    transform: scale(1.03);
+}
+
+.col_1 ul li {
+    float: left;
+    margin-left: 12px;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    line-height: 34px;
+}
+
+/* 轮播图 */
+.col_2 {
+    position: relative;
+    width: 329px;
+    height: 361px;
+    overflow: hidden;
+}
+
+.col_2 span a {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: inline-block;
+    width: 18px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, .12);
+    font-family: 'icomoon';
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    transition: .2s;
+    z-index: 5;
+    display: none;
+}
+
+.col_2 span a:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.col_2 span a:nth-child(1) {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.col_2 span a:nth-child(2) {
+    right: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.col_2 span a:nth-child(1) i {
+    position: relative;
+    left: -3px;
+}
+
+.col_2 span a:nth-child(2) i {
+    position: relative;
+    left: 3px;
+}
+
+/* 轮播图主体区域 */
+.col_2 .focus_small {
+    position: relative;
+    display: block;
+    width: 329px;
+    height: 361px;
+}
+
+.col_2 .focus_small li {
+    position: absolute;
+    top: 0;
+    width: 329px;
+    height: 361px;
+    /* opacity: 0; */
+    transition: all .3s;
+}
+
+.col_2 .focus_small li a img {
+    width: 329px;
+    height: 361px;
+}
+
+/* 小圆圈 */
+.col_2 .circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 10px;
+    padding: 3px 3px;
+    z-index: 5;
+}
+
+.col_2 .circle li {
+    display: block;
+    float: left;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    margin: 0 3px;
+    border-radius: 50%;
+    transition: .2s;
+}
+
+.now {
+    background-color: #c81623 !important;
+}
+
+.col_3 {
+    width: 221px;
+    height: 361px;
+    /* background-color: yellowgreen; */
+    border-right: 1px solid #ededed;
+    overflow: hidden;
+}
+
+.col_3 a img {
+    width: 220px;
+    height: 50%;
+    border-bottom: 1px solid #ededed;
+    transition: .3s;
+}
+
+.col_3 a img:hover {
+    transform: translateX(5px);
+}
+
+.col_4 {
+    width: 221px;
+    height: 361px;
+    /* background-color: red; */
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    overflow: hidden;
+}
+
+.col_4 a img {
+    width: 220px;
+    height: 360px;
+    transition: .3s;
+}
+
+.col_4 a img:hover {
+    transform: translateX(5px);
+}
+
+.col_5 {
+    width: 219px;
+    height: 361px;
+    /* background-color: royalblue; */
+    border-right: 1px solid #ededed;
+    overflow: hidden;
+}
+
+.col_5 a img {
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid #ededed;
+    transition: .3s;
+}
+
+.col_5 a img:hover {
+    transform: translateX(5px);
+}
+
+/* box_brand   品牌 */
+/* .box_brand {
+    margin-top: 20px;
+    height: 65px;
+    background-color: yellowgreen;
+} */
+
+div[class^="box_brand"] {
+    /* E[att^="val"]匹配具有att属性且值以val开头的E元素 */
+    margin-top: 20px;
+    height: 65px;
+    background-color: yellowgreen;
+}
+
+div[class*=box_brand] ul li a {
+    float: left;
+    width: 120px;
+    height: 65px;
+    background-color: pink;
+}
+
+.box_brand_one ul li a {
+    background: url(../img/brand/one.png);
+}
+
+.box_brand_two ul li a {
+    background: url(../img/brand/two.png);
+}
+
+.box_brand_three ul li a {
+    background: url(../img/brand/three.png);
+}
+
+footer {
+    margin-top: 60px;
+}

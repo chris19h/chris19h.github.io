@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title 网站标题 -->
+    <title>品优购-商品页(PYG.COM)-正品低价、品质保障、配送及时、轻松购物！</title>
+    <!-- description 网站说明 -->
+    <meta name="description" content="品优购PYG.COM-专业的综合网上购物商城，为您提供正品低价的购物选择、优质便捷的服务体验。商品来自全球数十万品牌商家，囊括家电、手机、电脑、服装、居家、母婴、美妆、个护、食品、生鲜等丰富品类，满足各种购物需求。" />
+    <!-- 关键字 -->
+    <meta name="Keywords" content="网上购物,网上商城,家电,手机,电脑,服装,居家,母婴,美妆,个护,食品,生鲜,京东" />
+    <!-- 引入favicon图标 -->
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <!-- 引入初始化样式文件 -->
+    <link rel="stylesheet" href="../css/base.css">
+    <!-- 引入公共的样式文件 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- 引入商品页专有样式文件 -->
+    <link rel="stylesheet" href="../css/list.css">
+</head>
+<body>
+    <!-- shortcut   快捷导航模块   start -->
+    <section class="shortcut">
+        <div class="w">
+            <ul class="fl">
+                <li>品优购欢迎您！&nbsp&nbsp&nbsp</li>
+                <li>
+                    <a href="#">请登录</a>&nbsp&nbsp&nbsp<a href="#" class="style_red">免费注册</a>
+                </li>
+            </ul>
+            <ul class="fr">
+                <li><a href="#">我的订单</a></li>
+                <li></li>
+                <li>
+                    <div>我的品优购</div><i class="iconfont"></i></li>
+                <li></li>
+                <li><a href="#">品优购会员</a></li>
+                <li></li>
+                <li><a href="#">企业采购</a></li>
+                <li></li>
+                <li>
+                    <div style="color: #c81623;">关注品优购</div><i class="iconfont"></i></li>
+                <li></li>
+                <li>
+                    <div>客户服务</div><i class="iconfont"></i></li>
+                <li></li>
+                <li>
+                    <div>网站导航</div><i class="iconfont"></i></li>
+            </ul>
+        </div>
+    </section>
+    <!-- header   头部模块制作   start -->
+    <header class="w">
+        <!-- logo模块 -->
+        <div class="logo">
+            <h1>
+                <a href="index.html" title="品优购商城">品优购</a>
+                <!-- title   鼠标放上去提示 -->
+            </h1>
+        </div>
+        <!-- seckill   商品页的秒杀模块 -->
+        <div class="seckill">
+            <a href="index.html"><img src="../img/seckill.png" alt=""></a>
+        </div>
+        <!-- search搜索模块 -->
+        <div class="search">
+            <input type="search" name="" id="" placeholder="语言开发">
+            <button>搜索</button>
+        </div>
+        <!-- hotwords模块制作   热词模块 -->
+        <div class="hotwords">
+            <a href="#" class="style_red">优惠购首发</a>
+            <a href="#">亿元优惠</a>
+            <a href="#">9.9元团购</a>
+            <a href="#">美满99减30</a>
+            <a href="#">办公用品</a>
+            <a href="#">电脑</a>
+            <a href="#">通信</a>
+        </div>
+        <!-- shopcar   购物车模块 -->
+        <div class="shopcar">我的购物车
+            <!-- count统计部分用绝对定位做 只给高度 -->
+            <i class="count">8</i>
+        </div>
+    </header>
+    <!-- nav   导航   start -->
+    <nav class="nav">
+        <div class="w">
+            <!-- dropdown   导航左侧   包含.dd .dt -->
+            <!-- <div class="dropdown">
+                <div class="dt">全部商品分类</div>
+                <div class="dd">
+                    <ul>
+                        <li><a href="#">家用电器</a></li>
+                        <li><a href="#">手机</a><span>、</span><a href="#">数码</a><span>、</span><a href="#">通讯</a></li>
+                        <li><a href="#">电脑</a><span>、</span><a href="#">办公</a></li>
+                        <li><a href="#">家居</a><span>、</span><a href="#">家具</a><span>、</span><a href="#">家装</a><span>、</span><a href="#">厨具</a></li>
+                        <li><a href="#">男装</a><span>、</span><a href="#">女装</a><span>、</span><a href="#">童装</a><span>、</span><a href="#">内衣</a></li>
+                        <li><a href="#">个户化妆</a><span>、</span><a href="#">清洁用品</a><span>、</span><a href="#">宠物</a></li>
+                        <li><a href="#">鞋靴</a><span>、</span><a href="#">箱包</a><span>、</span><a href="#">珠宝</a><span>、</span><a href="#">奢侈品</a></li>
+                        <li><a href="#">运动户外</a><span>、</span><a href="#">钟表</a></li>
+                        <li><a href="#">汽车</a><span>、</span><a href="#">汽车用品</a></li>
+                        <li><a href="#">母婴</a><span>、</span><a href="#">玩具乐器</a></li>
+                        <li><a href="#">食品</a><span>、</span><a href="#">酒类</a><span>、</span><a href="#">生鲜</a><span>、</span><a href="#">特产</a></li>
+                        <li><a href="#">医药保健</a></li>
+                        <li><a href="#">图书</a><span>、</span><a href="#">音像</a><span>、</span><a href="#">电子书</a></li>
+                        <li><a href="#">彩票</a><span>、</span><a href="#">旅行</a><span>、</span><a href="#">充值</a><span>、</span><a href="#">票务</a></li>
+                        <li><a href="#">理财</a><span>、</span><a href="#">众筹</a><span>、</span><a href="#">白条</a><span>、</span><a href="#">保险</a></li>
+                    </ul>
+                </div>
+            </div> -->
+            <!-- navitems   导航右侧 -->
+            <!-- <div class="navitems">
+                <ul>
+                    <li><a href="#">服装城</a></li>
+                    <li><a href="#">美妆馆</a></li>
+                    <li><a href="#">传智超市</a></li>
+                    <li><a href="#">全球购</a></li>
+                    <li><a href="#">闪购</a></li>
+                    <li><a href="#">团购</a></li>
+                    <li><a href="#">拍卖</a></li>
+                    <li><a href="#">有趣</a></li>
+                </ul>
+            </div> -->
+            <div class="sk_list">
+                <ul>
+                    <li>品优秒杀</li>
+                    <li>即将售罄</li>
+                    <li>超值低价</li>
+                </ul>
+            </div>
+            <div class="sk_con">
+                <ul>
+                    <li><a href="#">女装</a></li>
+                    <li><a href="#" class="style_red">女鞋</a></li>
+                    <li><a href="#">男装</a></li>
+                    <li><a href="#">男鞋</a></li>
+                    <li><a href="#">母婴童装</a></li>
+                    <li><a href="#">食品</a></li>
+                    <li><a href="#">智能数码</a></li>
+                    <li><a href="#">运动户外</a></li>
+                    <li><a href="#">更多分类</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 列表页主体部分   sk _container -->
+    <div class="w sk_container">
+        <!-- 展示图片 -->
+        <div class="sk_hd">
+            <img src="../upload/list/bg_03.png" alt="">
+        </div>
+        <!-- 商品页 -->
+        <div class="sk_bd">
+            <ul class="seckill-item">
+                <li>
+                    <a href="#" class="seckill-item_content">
+                        <img src="../upload/list/commodity.png" alt="">
+                        <div class="content">
+                            <p class="seckill-item_name">Apple苹果iPhone 6s Plus（A1699）32G 金色 移动联通电信4G手机</p>
+                            <span class="seckill-item_price">6088</span>&nbsp
+                            <span class="seckill-item_evaluate">
+                                <i class="left">已售87%</i>
+                                <i class="center"></i>
+                                <i class="right">剩余<p>29</p>件</i>
+                            </span>
+                        </div>
+                        <div class="cloose_btn">立即抢购</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="seckill-item_content">
+                        <img src="../upload/list/commodity.png" alt="">
+                        <div class="content">
+                            <p class="seckill-item_name">Apple苹果iPhone 6s Plus（A1699）32G 金色 移动联通电信4G手机</p>
+                            <span class="seckill-item_price">6088</span>&nbsp
+                            <span class="seckill-item_evaluate">
+                                <i class="left">已售87%</i>
+                                <i class="center"></i>
+                                <i class="right">剩余<p>29</p>件</i>
+                            </span>
+                        </div>
+                        <div class="cloose_btn">立即抢购</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="seckill-item_content">
+                        <img src="../upload/list/commodity.png" alt="">
+                        <div class="content">
+                            <p class="seckill-item_name">Apple苹果iPhone 6s Plus（A1699）32G 金色 移动联通电信4G手机</p>
+                            <span class="seckill-item_price">6088</span>&nbsp
+                            <span class="seckill-item_evaluate">
+                                <i class="left">已售87%</i>
+                                <i class="center"></i>
+                                <i class="right">剩余<p>29</p>件</i>
+                            </span>
+                        </div>
+                        <div class="cloose_btn">立即抢购</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="seckill-item_content">
+                        <img src="../upload/list/commodity.png" alt="">
+                        <div class="content">
+                            <p class="seckill-item_name">Apple苹果iPhone 6s Plus（A1699）32G 金色 移动联通电信4G手机</p>
+                            <span class="seckill-item_price">6088</span>&nbsp
+                            <span class="seckill-item_evaluate">
+                                <i class="left">已售87%</i>
+                                <i class="center"></i>
+                                <i class="right">剩余<p>29</p>件</i>
+                            </span>
+                        </div>
+                        <div class="cloose_btn">立即抢购</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sk_bd">
+            <ul class="seckill-item">
+                <li>
+                    <a href="#" class="seckill-item_content">
+                        <img src="../upload/list/commodity.png" alt="">
+                        <div class="content">
+                            <p class="seckill-item_name">Apple苹果iPhone 6s Plus（A1699）32G 金色 移动联通电信4G手机</p>
+                            <span class="seckill-item_price">6088</span>&nbsp
+                            <span class="seckill-item_evaluate">
+                                <i class="left">已售87%</i>
+                                <i class="center"></i>
+                                <i class="right">剩余<p>29</p>件</i>
+                            </span>
+                        </div>
+                        <div class="cloose_btn">立即抢购</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="seckill-item_content">
+                        <img src="../upload/list/commodity.png" alt="">
+                        <div class="content">
+                            <p class="seckill-item_name">Apple苹果iPhone 6s Plus（A1699）32G 金色 移动联通电信4G手机</p>
+                            <span class="seckill-item_price">6088</span>&nbsp
+                            <span class="seckill-item_evaluate">
+                                <i class="left">已售87%</i>
+                                <i class="center"></i>
+                                <i class="right">剩余<p>29</p>件</i>
+                            </span>
+                        </div>
+                        <div class="cloose_btn">立即抢购</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="seckill-item_content">
+                        <img src="../upload/list/commodity.png" alt="">
+                        <div class="content">
+                            <p class="seckill-item_name">Apple苹果iPhone 6s Plus（A1699）32G 金色 移动联通电信4G手机</p>
+                            <span class="seckill-item_price">6088</span>&nbsp
+                            <span class="seckill-item_evaluate">
+                                <i class="left">已售87%</i>
+                                <i class="center"></i>
+                                <i class="right">剩余<p>29</p>件</i>
+                            </span>
+                        </div>
+                        <div class="cloose_btn">立即抢购</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="seckill-item_content">
+                        <img src="../upload/list/commodity.png" alt="">
+                        <div class="content">
+                            <p class="seckill-item_name">Apple苹果iPhone 6s Plus（A1699）32G 金色 移动联通电信4G手机</p>
+                            <span class="seckill-item_price">6088</span>&nbsp
+                            <span class="seckill-item_evaluate">
+                                <i class="left">已售87%</i>
+                                <i class="center"></i>
+                                <i class="right">剩余<p>29</p>件</i>
+                            </span>
+                        </div>
+                        <div class="cloose_btn">立即抢购</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+         <div class="sk_bd">
+            <ul class="seckill-item">
+                <li>
+                    <a href="#" class="seckill-item_content">
+                        <img src="../upload/list/commodity.png" alt="">
+                        <div class="content">
+                            <p class="seckill-item_name">Apple苹果iPhone 6s Plus（A1699）32G 金色 移动联通电信4G手机</p>
+                            <span class="seckill-item_price">6088</span>&nbsp
+                            <span class="seckill-item_evaluate">
+                                <i class="left">已售87%</i>
+                                <i class="center"></i>
+                                <i class="right">剩余<p>29</p>件</i>
+                            </span>
+                        </div>
+                        <div class="cloose_btn">立即抢购</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="seckill-item_content">
+                        <img src="../upload/list/commodity.png" alt="">
+                        <div class="content">
+                            <p class="seckill-item_name">Apple苹果iPhone 6s Plus（A1699）32G 金色 移动联通电信4G手机</p>
+                            <span class="seckill-item_price">6088</span>&nbsp
+                            <span class="seckill-item_evaluate">
+                                <i class="left">已售87%</i>
+                                <i class="center"></i>
+                                <i class="right">剩余<p>29</p>件</i>
+                            </span>
+                        </div>
+                        <div class="cloose_btn">立即抢购</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="seckill-item_content">
+                        <img src="../upload/list/commodity.png" alt="">
+                        <div class="content">
+                            <p class="seckill-item_name">Apple苹果iPhone 6s Plus（A1699）32G 金色 移动联通电信4G手机</p>
+                            <span class="seckill-item_price">6088</span>&nbsp
+                            <span class="seckill-item_evaluate">
+                                <i class="left">已售87%</i>
+                                <i class="center"></i>
+                                <i class="right">剩余<p>29</p>件</i>
+                            </span>
+                        </div>
+                        <div class="cloose_btn">立即抢购</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="seckill-item_content">
+                        <img src="../upload/list/commodity.png" alt="">
+                        <div class="content">
+                            <p class="seckill-item_name">Apple苹果iPhone 6s Plus（A1699）32G 金色 移动联通电信4G手机</p>
+                            <span class="seckill-item_price">6088</span>&nbsp
+                            <span class="seckill-item_evaluate">
+                                <i class="left">已售87%</i>
+                                <i class="center"></i>
+                                <i class="right">剩余<p>29</p>件</i>
+                            </span>
+                        </div>
+                        <div class="cloose_btn">立即抢购</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- footer 底部模块制作   start -->
+    <footer>
+        <div class="w">
+            <!-- mod_service   底部服务模块   mod模块 -->
+            <div class="mod_service">
+                <ul>
+                    <li>
+                        <h5 class="mod_service_zheng"></h5>
+                        <h4>正品保障</h4>
+                        <p>正品保障，提供发票</p>
+                    </li>
+                    <li>
+                        <h5 class="mod_service_ji"></h5>
+                        <h4>急速物流</h4>
+                        <p>急速物流，急速送达</p>
+                    </li>
+                    <li>
+                        <h5 class="mod_service_wu"></h5>
+                        <h4>无忧售后</h4>
+                        <p>7天无理由退换货</p>
+                    </li>
+                    <li>
+                        <h5 class="mod_service_te"></h5>
+                        <h4>特色服务</h4>
+                        <p>私人定制家电套餐</p>
+                    </li>
+                    <li>
+                        <h5 class="mod_service_bang"></h5>
+                        <h4>帮助中心</h4>
+                        <p>您的购物指南</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- mod_help   底部帮助模块 -->
+            <div class="mod_help">
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd><a href="#">上门自提</a></dd>
+                    <dd><a href="#">211限时达</a></dd>
+                    <dd><a href="#">配送服务查询</a></dd>
+                    <dd><a href="#">配送费收取标准</a></dd>
+                    <dd><a href="#">海外配送</a></dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd><a href="#">货到付款</a></dd>
+                    <dd><a href="#">在线支付</a></dd>
+                    <dd><a href="#">分期付款</a></dd>
+                    <dd><a href="#">邮局汇款</a></dd>
+                    <dd><a href="#">公司转账</a></dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd><a href="#">售后政策</a></dd>
+                    <dd><a href="#">价格保护</a></dd>
+                    <dd><a href="#">退款说明</a></dd>
+                    <dd><a href="#">返修/退换货</a></dd>
+                    <dd><a href="#">取消订单</a></dd>
+                </dl>
+                <dl>
+                    <dt>特色服务</dt>
+                    <dd><a href="#">夺宝岛</a></dd>
+                    <dd><a href="#">DIY装机</a></dd>
+                    <dd><a href="#">延保服务</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">品优购E卡</a></dd>
+                    <dd><a href="#">品优购通信</a></dd>
+                </dl>
+                <dl>
+                    <dt>帮助中心</dt>
+                    <dd style="font-size: 12px;"><img src="../img/wx.png" alt="">品优购客户端</dd>
+                </dl>
+            </div>
+            <!-- mod_copyright   底部版权模块 -->
+            <div class="mod_copyright">
+                <!-- mod_copyright_links   链接 -->
+                <div class="mod_copyright_links">
+                    <p>
+                        <a href="#">关于我们</a><span>|</span>
+                        <a href="#">联系我们</a><span>|</span>
+                        <a href="#">联系客服</a><span>|</span>
+                        <a href="#">商家入驻</a><span>|</span>
+                        <a href="#">营销中心</a><span>|</span>
+                        <a href="#">手机品优购</a><span>|</span>
+                        <a href="#">友情链接</a><span>|</span>
+                        <a href="#">销售联盟</a><span>|</span>
+                        <a href="#">品优购社区</a><span>|</span>
+                        <a href="#">品优购公益</a><span>|</span>
+                        <a href="#">English Site</a><span>|</span>
+                        <a href="#">Contact U</a><span>|</span>
+                    </p>
+                </div>
+                <!-- mod_copyright_cert   证书栏目   cert证书 -->
+                <div class="mod_copyright_cert">
+                    <p>地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn</p>
+                    <p>京ICP备08001421号京公网安备110108007702</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

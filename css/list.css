@@ -1,0 +1,192 @@
+/* 商品页专有css */
+.seckill {
+    position: absolute;
+    left: 190px;
+    top: 36px;
+    border-left: 1px solid #c81523;
+}
+
+.seckill img {
+    padding-left: 14px;
+}
+
+.sk_list {
+    float: left;
+}
+
+.sk_list ul li {
+    float: left;
+    line-height: 47px;
+    padding: 0 30px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+}
+
+.sk_con {
+    float: left;
+}
+
+.sk_con ul li {
+    float: left;
+    line-height: 49px;
+    /* 行高大于高度，位置偏下 */
+    padding: 0 20px;
+}
+
+.sk_con ul li a {
+    font-size: 14px;
+    color: #666;
+}
+
+.sk_con ul li a:hover {
+    color: #c81523;
+}
+
+.sk_con ul li:last-child a::after {
+    content: '\e900';
+    font-family: 'icomoon';
+}
+
+/* 溢出隐藏   sk_hd中123跑到右侧 */
+.nav {
+    overflow: hidden;
+}
+
+/* 给高度不清楚浮动 */
+.sk_bd {
+    height: 460px;
+}
+
+.seckill-item li {
+    width: 300px;
+    height: 460px;
+    background-color: pink;
+    border: 1px solid #fff;
+    float: left;
+    text-align: center;
+}
+
+.seckill-item li:hover {
+    border: 1px solid #e12228;
+}
+
+.seckill-item li .seckill-item_content {
+    display: block;
+    position: relative;
+    width: 298px;
+    height: 458px;
+    background-color: #fff;
+}
+
+/* 商品内容详情 */
+.seckill-item li .seckill-item_content .content {
+    width: 270px;
+    /* background-color: yellowgreen; */
+    margin-left: 14px;
+    text-align: left;
+    margin-top: 16px;
+}
+
+.seckill-item_name {
+    font-size: 14px;
+    color: #747474;
+    /* 多行文本溢出显示省略号 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 弹性伸缩盒子模型显示 */
+    display: -webkit-box;
+    /* 限制在一个块元素显示的文本的行数 */
+    -webkit-line-clamp: 2;
+    /* 设置或检索伸缩盒对象的子元素的排列方式 */
+    -webkit-box-orient: vertical;
+}
+
+/* seckill-item_price   价格 */
+.seckill-item_price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #e60012;
+}
+
+.seckill-item_price::before {
+    content: '¥';
+    font-size: 14px;
+}
+
+.seckill-item_price::after {
+    content: '￥6988';
+    font-size: 12px;
+    color: #a4a4a4;
+    text-decoration: line-through;
+    /* 文字删除线 */
+}
+
+/* seckill-item_evaluate   评论 */
+.seckill-item_evaluate {
+    position: relative;
+    display: block;
+    width: 270px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 14px;
+    /* background-color: brown; */
+}
+
+.seckill-item_evaluate .left {
+    display: inline-block;
+    width: 58px;
+    color: #747474;
+    /* background-color: blue; */
+}
+
+.seckill-item_evaluate .right {
+    float: right;
+    padding-right: 10px;
+    color: #747474;
+    /* background-color: yellow; */
+}
+
+.seckill-item_evaluate .right p {
+    display: inline-block;
+    color: #e12228;
+}
+
+.seckill-item_evaluate .center {
+    position: absolute;
+    top: 5px;
+    left: 62px;
+    width: 132px;
+    height: 12px;
+    background-color: #fff;
+    border: 1px solid #ed282e;
+    border-radius: 6px;
+    /* 圆角6px */
+}
+
+.seckill-item_evaluate .center::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 87%;
+    height: 100%;
+    background-color: #ed282e;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.cloose_btn {
+    position: absolute;
+    bottom: 0px;
+    left: 19px;
+    width: 260px;
+    height: 50px;
+    background-color: #b1191a;
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;
+}
+
+footer {
+    margin-top: 100px;
+}
